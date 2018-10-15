@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fbooks>
+<book>
+<title>The Talisman</title>
+<authorname>Stephen King, Peter Straub</authorname>
+<publisher>Random House</publisher>
+<yearpublished>2001</yearpublished>
+</book>
+<book>
+<title>Macbeth</title>
+<authorname>William Shakespare</authorname>
+<publisher>Simon Schuster</publisher>
+<yearpublished>2003</yearpublished>
+</book>
+<book>
+<title>A Tale of Two Cities</title>
+<authorname>Charles Dickens</authorname>
+<publisher>Penguin</publisher>
+<yearpublished>2003</yearpublished>
+</book>
+</fbooks> 
+

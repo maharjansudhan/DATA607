@@ -1,0 +1,28 @@
+{"fbooks":[
+	{
+"title": "The Talisman",
+"authors": [
+				"Stephen King",
+                "Peter Straub"
+			],
+"publisher" :"Random House",
+"yearpublished": 2001
+	},
+	{
+"title": "Macbeth",
+"authors": [
+				"William Shakespare"
+			],
+"publisher" :"Simon Schuster",
+"yearpublished": 2003
+	},
+	{
+"title": "A Tale of Two Cities",
+"authors": [
+				"Charles Dickens"
+			],
+"publisher" :"Penguin",
+"yearpublished": 2003
+	}]
+}
+
