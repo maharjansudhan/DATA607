@@ -1,0 +1,64 @@
+---
+title: "Project3"
+author: "sudhan_maharjan, vinayak_patel, Olga_Shiligin"
+date: "October 19, 2018"
+output: html_document
+---
+
+# To Find Most Valued Data Science Skills
+
+## Greetings,
+
+My Name is Vinayak Patel. My team is Olga Shiligin (London) and Sudhan Maharjan (New York). We are
+graduate students at CUNY School of Professional Studies.
+I am writing to you to request your participation in a brief survey. The Purpose of the survey is find out
+most valued data science skills for New data scientist like us.
+The survey will be live from Oct 17th to Oct 20th. We are trying to reach many IT Professionals As we
+can. Please feel free to forward link in your network. We will really appreciate.
+Your participation in the survey is completely voluntary. No personally identifiable information will be
+associated with your responses to any reports of these data.
+Should you have any comments or questions, please feel free to contact me at
+
+#Get the data from github
+
+```{r}
+#getting the csv data from github
+datascience_skills <- read.csv("https://raw.githubusercontent.com/Vinayak234/SPS_DATA_607/master/SPS_DATA_607/Project_3/To%20find%20Most%20Valued%20Data%20Science%20Skills.csv", header=TRUE, sep=",")
+
+head(datascience_skills)
+```
+
+
+
+```{r}
+#VIEW THE DATA AND CREATE NAMES
+str(datascience_skills)
+```
+
+```{r}
+#to check how many candidates participated in this survey
+library(dplyr)
+count(datascience_skills, vars = "Gender")
+
+```
+
+```{r}
+#to see how many of the participants were male or female
+library(ggplot2)
+qplot(Gender, data = datascience_skills, fill = Gender, ylab="Participants")
+
+```
+
+```{r}
+#participants willingness to learn data science skills
+col9 = 9;
+x = datascience_skills[,c(col9)];
+
+names(x) <- c("Willingness to learn data science skills")
+
+
+#see how many participants wants to learn 
+qplot(x, data = datascience_skills, fill = x, ylab="Participants")
+```
+ 
+
